@@ -1,8 +1,6 @@
 # k8s-demo
 
-K8s single cluster demo with MySQL, Wordpress to run in local
+That one millisecond matters!
 
-# Steps
+K8s single cluster demo with two python services built using FastAPI and has a sidecar container of Envoy Proxy.
 
-.
-.

@@ -1,8 +1,9 @@
 FROM python:3.9-slim
+COPY . /bank-service
 WORKDIR /bank-service
 RUN apt-get update && \
     apt-get upgrade -y
 ADD . ./
 RUN pip install -r requirements.txt
-EXPOSE 8000
-CMD uvicorn run:app --reload
+EXPOSE 8082
+CMD ["uvicorn", "run:app", "--host", "0.0.0.0", "--port", "8082"]

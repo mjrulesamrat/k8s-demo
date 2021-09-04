@@ -19,3 +19,11 @@ For each request coming from the Bank, Professor sends one socket event to Marse
     ```
     uvicorn run:app --reload
     ```
+
+- Testing Application locally
+
+    ```
+    docker build -t professor-service:latest .
+    docker images  # list down images
+    docker run -p 8081:8081 professor-service:latest  # host-port:container-port
+    ```
